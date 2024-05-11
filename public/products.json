@@ -1,0 +1,60 @@
+{
+    "products": [
+      {
+        "id" : 1, 
+        "product_name": "Formal Tuxedo Suit",
+        "description": "Look dashing in this classic formal tuxedo suit. Perfect for weddings, proms, and black-tie events.",
+        "price": 199.99,
+        "available_sizes": ["S", "M", "L", "XL", "XXL"],
+        "colors": ["Black", "Navy Blue"],
+        "photo_link": "https://lsmensclothing.com/wp-content/uploads/2018/06/tuxedo-vs-suit-1.jpeg"
+      },
+      {
+        "id" : 2, 
+        "product_name": "Casual Slim Fit Shirt",
+        "description": "Upgrade your casual wardrobe with this stylish slim fit shirt. Versatile enough for work or weekends.",
+        "price": 49.99,
+        "available_sizes": ["XS", "S", "M", "L", "XL"],
+        "colors": ["White", "Light Blue", "Gray"],
+        "photo_link": "https://i.pinimg.com/736x/e4/5a/43/e45a43655c7502a3b053c0261e2d1ec5.jpg"
+      },
+      {
+        "id" : 3, 
+        "product_name": "Tailored Dress Pants",
+        "description": "Achieve a polished look with these tailored dress pants. Perfect for business meetings or formal events.",
+        "price": 79.99,
+        "available_sizes": ["30W", "32W", "34W", "36W", "38W"],
+        "colors": ["Black", "Charcoal Gray", "Navy Blue"],
+        "photo_link": "https://tailoredathlete.com/cdn/shop/files/Photo-45_1200x.jpg?v=1688596314"
+      },
+      {
+        "id" : 4, 
+        "product_name": "Classic Leather Dress Shoes",
+        "description": "Step out in style with these classic leather dress shoes. Timeless design suitable for any formal occasion.",
+        "price": 129.99,
+        "available_sizes": ["7", "8", "9", "10", "11"],
+        "colors": ["Black", "Brown"],
+        "photo_link": "https://images-cdn.ubuy.co.in/643b0e02b89f0326e931b2ae-leather-oxford-shoes-for-men-classic.jpg"
+      },
+      {
+        "id" : 5, 
+        "product_name": "Sporty Polo Shirt",
+        "description": "Stay comfortable and stylish with this sporty polo shirt. Great for casual outings or weekend activities.",
+        "price": 29.99,
+        "available_sizes": ["S", "M", "L", "XL"],
+        "colors": ["Navy Blue", "Red", "White"],
+        "photo_link": "https://5.imimg.com/data5/CW/WE/KC/SELLER-51060045/mens-sports-t-shirt-500x500.jpg"
+      },
+      {
+        "id" : 6, 
+        "product_name": "Smart Casual Blazer",
+        "description": "Elevate your look with this smart casual blazer. Pair it with jeans for a sophisticated yet relaxed ensemble.",
+        "price": 89.99,
+        "available_sizes": ["S", "M", "L", "XL", "XXL"],
+        "colors": ["Charcoal Gray", "Navy Blue", "Beige"],
+        "photo_link": "https://m.media-amazon.com/images/I/61AP9GoC+jL._AC_UF894,1000_QL80_DpWeblab_.jpg"
+      }
+    ]
+  }
+  
+  
