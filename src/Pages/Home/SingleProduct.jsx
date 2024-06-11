@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
-import SingleSIze from "./SingleSIze";
+// import { useState } from "react";
+// import SingleSIze from "./SingleSIze";
 
 const SingleProduct = ({ product }) => {
-  const [selectSize, setSelectSize] = useState("");
+  // const [selectSize, setSelectSize] = useState("");
   const { product_name, photo_link, description, id, price, available_sizes } =
     product;
   const handleAddToCart = () => {
@@ -28,7 +28,7 @@ const SingleProduct = ({ product }) => {
         <p>{description}</p>
         <p>Price : {price}</p>
 
-        <div className="grid grid-cols-5">
+        {/* <div className="grid grid-cols-5">
           {available_sizes.map((size, i) => (
             <SingleSIze
               key={id}
@@ -37,7 +37,7 @@ const SingleProduct = ({ product }) => {
               setSelectSize={setSelectSize}
             ></SingleSIze>
           ))}
-        </div>
+        </div> */}
 
         <div className="card-actions w-full">
           <button onClick={handleAddToCart} className="btn btn-primary w-full">

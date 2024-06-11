@@ -1,60 +1,75 @@
 {
-    "products": [
-      {
-        "id" : 1, 
-        "product_name": "Formal Tuxedo Suit",
-        "description": "Look dashing in this classic formal tuxedo suit. Perfect for weddings, proms, and black-tie events.",
-        "price": 199.99,
-        "available_sizes": ["S", "M", "L", "XL", "XXL"],
-        "colors": ["Black", "Navy Blue"],
-        "photo_link": "https://lsmensclothing.com/wp-content/uploads/2018/06/tuxedo-vs-suit-1.jpeg"
-      },
-      {
-        "id" : 2, 
-        "product_name": "Casual Slim Fit Shirt",
-        "description": "Upgrade your casual wardrobe with this stylish slim fit shirt. Versatile enough for work or weekends.",
-        "price": 49.99,
-        "available_sizes": ["XS", "S", "M", "L", "XL"],
-        "colors": ["White", "Light Blue", "Gray"],
-        "photo_link": "https://i.pinimg.com/736x/e4/5a/43/e45a43655c7502a3b053c0261e2d1ec5.jpg"
-      },
-      {
-        "id" : 3, 
-        "product_name": "Tailored Dress Pants",
-        "description": "Achieve a polished look with these tailored dress pants. Perfect for business meetings or formal events.",
-        "price": 79.99,
-        "available_sizes": ["30W", "32W", "34W", "36W", "38W"],
-        "colors": ["Black", "Charcoal Gray", "Navy Blue"],
-        "photo_link": "https://tailoredathlete.com/cdn/shop/files/Photo-45_1200x.jpg?v=1688596314"
-      },
-      {
-        "id" : 4, 
-        "product_name": "Classic Leather Dress Shoes",
-        "description": "Step out in style with these classic leather dress shoes. Timeless design suitable for any formal occasion.",
-        "price": 129.99,
-        "available_sizes": ["7", "8", "9", "10", "11"],
-        "colors": ["Black", "Brown"],
-        "photo_link": "https://images-cdn.ubuy.co.in/643b0e02b89f0326e931b2ae-leather-oxford-shoes-for-men-classic.jpg"
-      },
-      {
-        "id" : 5, 
-        "product_name": "Sporty Polo Shirt",
-        "description": "Stay comfortable and stylish with this sporty polo shirt. Great for casual outings or weekend activities.",
-        "price": 29.99,
-        "available_sizes": ["S", "M", "L", "XL"],
-        "colors": ["Navy Blue", "Red", "White"],
-        "photo_link": "https://5.imimg.com/data5/CW/WE/KC/SELLER-51060045/mens-sports-t-shirt-500x500.jpg"
-      },
-      {
-        "id" : 6, 
-        "product_name": "Smart Casual Blazer",
-        "description": "Elevate your look with this smart casual blazer. Pair it with jeans for a sophisticated yet relaxed ensemble.",
-        "price": 89.99,
-        "available_sizes": ["S", "M", "L", "XL", "XXL"],
-        "colors": ["Charcoal Gray", "Navy Blue", "Beige"],
-        "photo_link": "https://m.media-amazon.com/images/I/61AP9GoC+jL._AC_UF894,1000_QL80_DpWeblab_.jpg"
-      }
-    ]
-  }
-  
-  
+  "products": [
+    {
+      "id": 1,
+      "product_name": "To Kill a Mockingbird",
+      "description": "Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South.",
+      "price": 14.99,
+      "photo_link": "https://pathakshamabesh.com/wp-content/uploads/2022/02/4084a0711c388099e55c08e2c0f28a25.jpg"
+    },
+    {
+      "id": 2,
+      "product_name": "1984",
+      "description": "George Orwell's dystopian novel set in a totalitarian society under constant surveillance.",
+      "price": 9.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780451524935"
+    },
+    {
+      "id": 3,
+      "product_name": "The Great Gatsby",
+      "description": "F. Scott Fitzgerald's classic novel of the Jazz Age, a tale of decadence and excess.",
+      "price": 10.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780743273565"
+    },
+    {
+      "id": 4,
+      "product_name": "Pride and Prejudice",
+      "description": "Jane Austen's beloved tale of love and societal expectations in 19th-century England.",
+      "price": 8.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780141439518"
+    },
+    {
+      "id": 5,
+      "product_name": "The Catcher in the Rye",
+      "description": "J.D. Salinger's iconic novel about teenage angst and alienation.",
+      "price": 10.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780316769488"
+    },
+    {
+      "id": 6,
+      "product_name": "The Hobbit",
+      "description": "J.R.R. Tolkien's fantasy adventure that precedes the epic Lord of the Rings trilogy.",
+      "price": 12.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780345339683"
+    },
+    {
+      "id": 7,
+      "product_name": "Moby Dick",
+      "description": "Herman Melville's classic tale of obsession and revenge on the high seas.",
+      "price": 11.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780142437247"
+    },
+    {
+      "id": 8,
+      "product_name": "War and Peace",
+      "description": "Leo Tolstoy's epic novel of Russian society during the Napoleonic Wars.",
+      "price": 19.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9781400079988"
+    },
+    {
+      "id": 9,
+      "product_name": "The Alchemist",
+      "description": "Paulo Coelho's enchanting story of a shepherd's journey to discover his personal legend.",
+      "price": 13.99,
+      "photo_link": "https://images.penguinrandomhouse.com/cover/9780062315007"
+    },
+    {
+      "id": 10,
+      "product_name": "The Catch-22",
+      "description": "Joseph Heller's satirical novel about the absurdities of war.",
+      "price": 12.99,
+      "photo_link": "https://books.google.com.bd/books/content?id=U9V8JYt7WwoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U28v9sqYJFBUdpfQic9ps7uEsDifg&w=1280"
+    }
+  ]
+}
+
