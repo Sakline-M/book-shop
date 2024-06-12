@@ -1,23 +1,38 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
-// import { useState } from "react";
-// import SingleSIze from "./SingleSIze";
+import { useContext } from "react";
+import handleAddToLocalStorage from "../../LocalStroge/handleLocalStroge";
+import { BookContext } from "../../Context-Api/AllContext";
+import toast from "react-hot-toast";
 
 const SingleProduct = ({ product }) => {
-  // const [selectSize, setSelectSize] = useState("");
-  const { product_name, photo_link, description, id, price, available_sizes } =
-    product;
-  const handleAddToCart = () => {
-    const store = JSON.parse(localStorage.getItem("e-storage"));
-    if (!store) {
-      return window.alert("please login first");
+  const { product_name, photo_link, description, id, price } = product;
+  const { refresh, setRefresh, cart } = useContext(BookContext);
+
+  const handleAddToLocalStorage = () => {
+    let books = JSON.parse(localStorage.getItem("book-store-books"));
+    if (!books) {
+      const newBooks = JSON.stringify([product]);
+      localStorage.setItem("book-store-books", newBooks);
+      setRefresh(refresh + 1);
+      toast.success("successfully add to cart");
+    } else {
+      // Check if the product is already in the cart
+      const productExists = books.some((book) => book.id === id);
+
+      if (productExists) {
+        return toast.error("This product is already in the cart");
+      } else {
+        // Add the product to the cart
+        const newBooks = JSON.stringify([...books, product]);
+        localStorage.setItem("book-store-books", newBooks);
+        setRefresh(refresh + 1);
+        toast.success("successfully add to cart");
+      }
     }
-    store.cart = [...store.cart, product];
-    const newStore = JSON.stringify(store);
-    localStorage.removeItem("e-storage");
-    localStorage.setItem("e-storage", newStore);
   };
+
   return (
     <div className="card w-96 bg-base-100 shadow-xl cursor-pointer">
       <figure>
@@ -28,19 +43,11 @@ const SingleProduct = ({ product }) => {
         <p>{description}</p>
         <p>Price : {price}</p>
 
-        {/* <div className="grid grid-cols-5">
-          {available_sizes.map((size, i) => (
-            <SingleSIze
-              key={id}
-              size={size}
-              selectSize={selectSize}
-              setSelectSize={setSelectSize}
-            ></SingleSIze>
-          ))}
-        </div> */}
-
         <div className="card-actions w-full">
-          <button onClick={handleAddToCart} className="btn btn-primary w-full">
+          <button
+            onClick={handleAddToLocalStorage}
+            className="btn btn-primary w-full"
+          >
             Add To Cart
           </button>
         </div>

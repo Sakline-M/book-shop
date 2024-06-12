@@ -6,8 +6,8 @@ import AllContext from "./Context-Api/AllContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <AllContext> */}
+    <AllContext>
       <App />
-    {/* </AllContext> */}
+    </AllContext>
   </React.StrictMode>
 );

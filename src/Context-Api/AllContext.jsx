@@ -3,25 +3,23 @@
 import React, { createContext, useEffect, useState } from "react";
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const userContext = createContext();
+export const BookContext = createContext();
 
 const AllContext = ({ children }) => {
-  const [user, setUser] = useState({});
   const [refresh, setRefresh] = useState(1);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const store = localStorage.getItem("e-storage");
-
-    if (store) {
-      const user = JSON.parse(store.user);
-      setUser(user);
+    const books = JSON.parse(localStorage.getItem("book-store-books"));
+    if (!books) {
+      setCart([]);
+    } else {
+      setCart(books);
     }
   }, [refresh]);
 
-  const value = {user : "context"}
-  return (
-    <userContext.Provider value={value}>{children}</userContext.Provider>
-  );
+  const value = { refresh, setRefresh, cart };
+  return <BookContext.Provider value={value}>{children}</BookContext.Provider>;
 };
 
 export default AllContext;

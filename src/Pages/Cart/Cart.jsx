@@ -1,28 +1,24 @@
 /* eslint-disable no-unused-vars */
 
+import { useContext } from "react";
 import CartSingle from "./CartSingle";
+import { BookContext } from "../../Context-Api/AllContext";
 
 const Cart = () => {
-  const store = JSON.parse(localStorage.getItem("e-storage"));
-  const cartItems = store.cart;
+  const { cart } = useContext(BookContext);
 
-  const TotalPriceCount = (cartItems) => {
+  const cartCount = (cart) => {
     let price = 0;
-    cartItems.forEach((items) => {
-      const productPrice = items.price;
-      price = productPrice + price;
+    cart.forEach((book) => {
+      price = price + book.price;
     });
-
     return price;
   };
 
-  const totalPrice = TotalPriceCount(cartItems);
-  console.log(totalPrice);
+  const totalPrice = cartCount(cart);
   return (
     <div className="min-h-screen">
-      <h1>Cart length : {cartItems.length}</h1>
-      <h1>Total price : {totalPrice}</h1>
-      {cartItems.map((item, index) => (
+      {cart.map((item, index) => (
         <CartSingle key={index} item={item}></CartSingle>
       ))}
       <div className="flex justify-center items-center">

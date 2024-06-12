@@ -1,23 +1,14 @@
+/* eslint-disable no-const-assign */
 /* eslint-disable no-unused-vars */
 
-import { json } from "react-router-dom";
+const handleAddToLocalStorage = (book) => {
+  let books = JSON.parse(localStorage.getItem("books")) || [];
 
-export const handleLocalStorageLogin = (user) => {
-  const eStore = localStorage.getItem("e-storage");
-  if (!eStore) {
-    const store = {
-      cart: [],
-      user: user,
-    };
-    const storeJson = JSON.stringify(store);
-    localStorage.setItem("e-storage", storeJson);
+  if (books?.length === 0) {
+    books = [book];
   }
 
-  localStorage.removeItem("e-storage");
-  const store = {
-    cart: [],
-    user: user,
-  };
-  const storeJson = JSON.stringify(store);
-  localStorage.setItem("e-storage", storeJson);
+  return console.log(books);
 };
+
+export default handleAddToLocalStorage;
