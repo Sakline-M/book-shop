@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SingleProduct from "./SingleProduct";
+import Carousel from "../Components/Carousel/Carousel";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -11,14 +12,15 @@ const Home = () => {
   }, []);
   
   return (
-    <div className="my-20">
-      <div className="text-center text-5xl font-bold">
+    <div className=" mb-[100px]">
+      {/* <div className="text-center text-5xl font-bold">
         <h1>Welcome to E-shop</h1>
       </div>
       <div>
         <h1>Product length : {products.length}</h1>
-      </div>
-      <div className="grid grid-cols-3 mx-5">
+      </div> */}
+      <Carousel/>
+      <div className="grid grid-cols-3 mx-5 mt-[70px]">
         {products.map((product) => (
           <SingleProduct key={product.id} product={product}></SingleProduct>
         ))}

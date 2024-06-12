@@ -69,7 +69,20 @@
       "description": "Joseph Heller's satirical novel about the absurdities of war.",
       "price": 12.99,
       "photo_link": "https://books.google.com.bd/books/content?id=U9V8JYt7WwoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U28v9sqYJFBUdpfQic9ps7uEsDifg&w=1280"
+    },
+    {
+      "id": 11,
+      "product_name": "Brave New World",
+      "description": "Aldous Huxley's prophetic novel of a future society driven by technology and conformity.",
+      "price": 10.99,
+      "photo_link": "https://upload.wikimedia.org/wikipedia/en/6/62/BraveNewWorld_FirstEdition.jpg"
+    },
+    {
+      "id": 12,
+      "product_name": "The Road",
+      "description": "Cormac McCarthy's haunting post-apocalyptic novel of a father and son's journey for survival.",
+      "price": 11.99,
+      "photo_link": "https://upload.wikimedia.org/wikipedia/commons/2/27/The-road.jpg"
     }
   ]
 }
-
